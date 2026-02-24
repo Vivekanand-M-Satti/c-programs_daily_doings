@@ -35,3 +35,206 @@ int main()
     char str[]="heLLlo";
     change(str);
 }
+//--------------------------------------------3.-------reverse the string by using the size off broo ----
+#include<stdio.h>
+void reverse(char str[],int s)
+{
+    int  temp;
+
+    
+    for(int i=0;i<s/2;i++)
+    {
+        temp=str[i];
+        str[i]=str[s-i-1];
+        str[s-i-1]=temp;
+
+
+    }
+    printf("%s",str);
+
+}
+int main()
+{
+    char str[]="my name is who";
+    int s=sizeof(str);
+
+    reverse (str,s-1);
+}
+//--------------------------------------------3.-------reverse the string by using the strlen  broo ----
+#include<stdio.h>
+#include<string.h>
+void reverse(char str[],int s)
+{
+    int  temp;
+
+    
+    for(int i=0;i<s/2;i++)
+    {
+        temp=str[i];
+        str[i]=str[s-i-1];
+        str[s-i-1]=temp;
+
+
+    }
+    printf("%s",str);
+
+}
+int main()
+{
+    char str[]="my name is who";
+    int s=strlen(str);
+
+    reverse (str,s);
+}*/
+//--------------------------------wap to calculate the number of the words in the string-------
+#include<stdio.h>
+void words (char str[])
+{
+    int count =1;
+    for(int i=0;str[i]!='\0';i++)
+
+    {
+        if(str[i]==' ')
+       count ++;
+    }
+    printf(" the number of the words are %d",count);
+
+}
+int main()
+{
+    char strr[]="hi iam the king of the free fire";
+    words(strr);
+}
+//----------------------------------------------4 . wap to string is palindrome or not ----------
+#include<stdio.h>
+#include<string.h>
+
+void palindrome(char str[])
+{
+    int s=strlen(str),flag=0;
+    for(int i=0;i<s/2;i++)
+    {
+        if(str[i]==str[s-i-1])
+        {
+            flag++;
+        }
+    }
+    if(flag==s/2)
+    {
+        printf("palindrome");
+    }
+    else
+    {
+        printf("not palidrome");
+    }
+
+}
+int main()
+{
+    char str[]="hiih";
+
+    palindrome(str);
+}
+// --------------------------------------4. 2nd method  palindrome or not ----------------
+    #include<stdio.h>
+#include<string.h>
+
+void palindrome(char str[])
+{
+    int s=strlen(str),flag=0;
+    for(int i=0;i<s/2;i++)
+    {
+        if(str[i]!=str[s-i-1])
+        {
+            printf("not palindrome ");
+            return;
+        }
+    }
+
+        printf("palindrome");
+
+}
+int main()
+{
+    char str[]="hiolih";
+
+    palindrome(str);
+}
+//----------------------t6  -wap to removve charecter from the string bro----------------
+#include<stdio.h>
+ void remove_char(char str[],char ch)
+ {
+    for (int i=0;str[i]!='\0';i++)
+    {
+        if(str[i]==ch)
+        for(int j=i;str[j]!='\0';j++)
+        {
+            str[j]=str[j+1];
+            
+        }
+    }
+    //printf("%s",str);
+ }
+int main()
+{
+    char str[]="banana";
+    char ch;
+    scanf("%c",&ch);
+    remove_char(str,ch);
+     printf("%s",str);
+}
+     //----------------------t6  2nd method ---wap to removve charecter from the string bro----------------
+#include<stdio.h>
+ void remove_char(char str[],char ch)
+ {
+    int j=0;
+    for (int i=0;str[i]!='\0';i++)
+    {
+        if(str[i]!=ch)
+        str[j++]=str[i];
+        
+    }
+    str[j]='\0';
+    printf("%s",str);
+ }
+int main()
+{
+    char str[]="banana";
+    char ch;
+    scanf("%c",&ch);
+    remove_char(str,ch);
+    // printf("%s",str);
+}
+// ----------------------------6.-----copy the string to another string broii--------
+#include<stdio.h>
+#include<string.h>
+void copy (char str1[],char str2[])
+{
+for(int i=0;str1[i]!='\0';i++)
+{
+    str2[i]=str1[i];
+}
+printf("%s",str2);
+}
+
+int main()
+{
+    char str1[]="vivek";
+    char str2[strlen(str1)+1];
+    copy(str1,str2);
+}*/
+// ----------------------------6.--- 2 method by using the strcpy--copy the string to another string broii--------
+#include<stdio.h>
+#include<string.h>
+void copy (char str1[],char str2[])
+{
+strcpy(str2,str1);
+printf("%s",str2);
+}
+
+int main()
+{
+    char str1[]="vivek";
+    char str2[strlen(str1)+1];
+    copy(str1,str2);
+}
