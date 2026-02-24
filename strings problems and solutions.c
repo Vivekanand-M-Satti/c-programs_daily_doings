@@ -238,3 +238,44 @@ int main()
     char str2[strlen(str1)+1];
     copy(str1,str2);
 }
+//--------------------11.......-wap that the 2 strings are same or not ------------
+#include<stdio.h>
+#include<string.h>
+
+void compare(char str1[],char str2[])
+{
+    int count =0;
+    for(int i=0;str1[i];i++)
+    {
+      if (str1[i]==str2[i])
+      count++;
+    }
+    if (count == strlen(str1)&&count ==strlen(str2))
+    printf("both strings are the same ");
+    else 
+    printf("not same both strings");
+} 
+int main()
+{
+    char str1[]="hello";
+    char str2[]="helo";
+    compare(str1,str2);
+}*/
+//---------------------------printing the array by practice only ---
+#include<stdio.h>
+void print (char *arr,int size)
+{
+    int i;
+    // for (i=0;i<size;i++)
+    // {
+    //     printf("%d",arr[i]);
+    // }
+    printf("%s",arr);// prints nothig broiiiiii-------------------
+}
+int main()
+{
+    char arr[5]={1,3,4,5,6};
+    int size=5;
+    print(arr,size);
+
+}
