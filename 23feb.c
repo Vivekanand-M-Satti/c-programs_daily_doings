@@ -185,4 +185,27 @@ int main()
 //     scanf(" %c",&key);
 //     remove(str,key);
 // }
+#include<stdio.h>
+#include<string.h>
+
+void rever(char str[])
+{ int temp;
+    int s=strlen(str);
+    for(int i=0;i<s/2;i++)
+    {
+        temp=str[i];
+        str[i]=str[s-i-1];
+        str[s-i-1]=temp;
+    }
+    printf("Reversed string is %s",str);
+    //printf("%d",s);
+}
+int main()
+{
+    char str[100];
+    //scanf("%[^\n]",str);
+    fgets(str,100,stdin);
+   // printf("%u",sizeof(str));
+    rever(str);
+}
 
