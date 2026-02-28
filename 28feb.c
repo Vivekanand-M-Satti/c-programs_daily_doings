@@ -219,3 +219,92 @@ int main()
           }       
     }
 }*/
+#include<stdio.h>
+int main()
+{
+  int start;
+  int N,day;
+  printf("enter the N and start:");
+  scanf("%d %d",&start,&N);
+  if((start<8 && N<366)&&(start<0 && N<0))
+  {
+
+ day = ((start+N-1) % 7);
+  
+  switch(day)
+  
+  {
+  case 1:
+    printf("sunday");
+    break;
+    case 2:
+    printf("monday");
+    break;
+    case 3:
+    printf("tuesday");
+    break;
+    case 4:
+    printf("wednsday");
+    break;
+    case 5:
+    printf("thursday");
+    break;
+    case 6:
+    printf("friday");
+    break;
+    case 0:
+    printf("satrday");
+    break;
+
+  }
+
+}
+
+
+printf("enter the number in range ");
+}
+#include<stdio.h>
+int main()
+{
+  int start;
+  int N,day;
+  printf("enter the N and start:");
+  scanf("%d %d",&start,&N);
+  if((start<8 && N<366)&&(start<0 && N<0))
+  {
+
+ day = ((start+N-1) % 7);
+  
+  switch(day)
+  
+  {
+  case 1:
+    printf("sunday");
+    break;
+    case 2:
+    printf("monday");
+    break;
+    case 3:
+    printf("tuesday");
+    break;
+    case 4:
+    printf("wednsday");
+    break;
+    case 5:
+    printf("thursday");
+    break;
+    case 6:
+    printf("friday");
+    break;
+    case 0:
+    printf("satrday");
+    break;
+
+  }
+
+}
+
+
+printf("enter the number in range ");
+}
+
