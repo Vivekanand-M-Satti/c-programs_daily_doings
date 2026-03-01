@@ -1,5 +1,5 @@
 //
-//                                                             find the 3rd largest number in the array
+//                      -----------                find the 3rd largest number in the array
  
 
 #include <stdio.h>
@@ -272,3 +272,4 @@ int is_prime(int n)
     }
 
 }
+
