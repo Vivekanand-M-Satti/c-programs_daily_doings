@@ -58,7 +58,7 @@ int main()
     char str[]="my name is who";
     int s=sizeof(str);
 
-    reverse (str,s-1);
+    reverse (str,s-1);//reverse
 }
 //--------------------------------------------3.-------reverse the string by using the strlen  broo ----
 #include<stdio.h>
