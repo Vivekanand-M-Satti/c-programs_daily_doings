@@ -11,7 +11,7 @@ int main()
     strin (str1);
 
 }*/
-//-----------------------------2-------wap to convert the upper case to the lower ccase and the lower case to the upper case-
+//-----------------------------2-------wap to convert the upper case to the lower ccase and the lower case to the upper case-------------
 #include<stdio.h>
 void change(char str[])
 {
