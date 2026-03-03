@@ -3,7 +3,7 @@
 // void ptrr(int *ptr,int size)
 // {   printf("Array's elements are\n");
 //     for(int i=0;i<size;i++)
-//     {
+//     {  
 //         printf("%d\n",*(ptr+i));
 //     }
     
@@ -238,6 +238,7 @@ int main()
     {
         printf("%d",arr[i]);
     }
+
 
 
 }
