@@ -61,7 +61,7 @@ int main()
 }
 
 
-//////////////////////////////////////------------------------------avg of the 3 numbers 
+//////////////////////////////////////---------------------------avg of the 3 numbers 
 #include<stdio.h>
 int avg (int a,int b , int c);
 int avg (int a ,int b,int c)
@@ -300,6 +300,7 @@ int main()
 {
     printf("%d",digit(1222422));
 }
+
 
 
 
