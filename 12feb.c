@@ -19,7 +19,7 @@ int main()
     factor(a);
 }
 
-//----------------------------------------------------------wap the reverrse the number -----------------
+//---------------------------------------------------wap the reverrse the number -----------------
 #include<stdio.h>
 int rev(int a );
 int rev( int a)
@@ -300,6 +300,7 @@ int main()
 {
     printf("%d",digit(1222422));
 }
+
 
 
 
