@@ -19,6 +19,7 @@ void update(int *a,int *b)
   printf("%d\t%d\n",a,b);
   update(&a,&b);
   printf("%d\t%d",a,b);
+  return 0;
 
 
 }*/
@@ -185,4 +186,5 @@ int main()
     int arr[size];
    square(arr,size);
     
+
 }
