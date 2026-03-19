@@ -13,7 +13,7 @@ void  factor(int a )
      }
 }
 int main()
-{
+
     int a;
     scanf("%d",&a);
     factor(a);
