@@ -15,7 +15,8 @@ int main()
         }
     }
     printf("even array");
-    for(i=0;i<ecount;i++)
+    for(
+    i=0;i<ecount;i++)
     {
             printf("%d  ",even[i]);
     }
