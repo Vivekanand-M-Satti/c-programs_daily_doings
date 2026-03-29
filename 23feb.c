@@ -8,6 +8,7 @@ void array(int *ptr,int size)
     printf("%d",*ptr++);
     array(ptr,size-1);
     
+    
 
 }
 void main()
