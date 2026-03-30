@@ -9,7 +9,7 @@ int sum(int a)
     return 0;
  }
  return a+sum(a-1);
-}
+}//null bro
 void main()
 {
     int a ;
