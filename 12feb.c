@@ -5,7 +5,7 @@ void  factor(int a )
 {
     int i=1;
      while (i<=a)
-     {
+         {
         if(a%i==0){
         printf("%d\n",i);
         }
